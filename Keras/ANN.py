@@ -9,8 +9,10 @@ from tensorflow.keras.metrics import categorical_crossentropy
 
 model = Sequential([
     Dense(units=16, input_shape=(1,), activation='relu'),
-    Dense(units=32, activation='relu'),
-    Dense(units=2, activation='softmax')
+    Dense(units=10000, activation='relu'),
+    Dense(units=10000, activation='relu'),
+    Dense(units=10000, activation='relu'),
+    Dense(units=1000, activation='softmax')
 ])
 
 model.summary()

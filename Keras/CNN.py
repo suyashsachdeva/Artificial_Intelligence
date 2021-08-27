@@ -21,6 +21,13 @@ import warnings
 
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
+
+## verbose is basically how you want to see the progress of the of the model on the terminal
+# verbose=0 silent training and nothing will come on the terminal
+# verbose=1 will make a progress bar 
+# verbose=1 will make line epoch to tell you the progress of the model
+
+
 # Making the folders for storing the subset of the dataset
 loc = r'C:\Users\suyash\Desktop\cats vs dogs\train'
 os.chdir(loc)
